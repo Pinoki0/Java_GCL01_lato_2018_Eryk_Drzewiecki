@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <title>Clubs</title>
+</head>
+<body>
+<h1>List of Clubs</h1><br>
+<table class="table">
+
+        <tr>
+        <td>League index</td>
+        <td>Country index</td>
+        <td>League name</td>
+        <td>League description</td>
+        </tr>
+        
+            <tr th:each="prod : ${leagues}">
+                <td th:text="${prod.leagueId}">Index</td>
+                <td th:text="${prod.countryId}">Country</td>
+                <td th:text="${prod.name}">Name</td>
+                <td th:text="${prod.description}">Description</td>
+            </tr>
+        </table>
+        <form method="GET" action="/panel" enctype="multipart/form-data">
+                <input type="submit" value="<--Back">
+            </form>
+</body>
+</html>

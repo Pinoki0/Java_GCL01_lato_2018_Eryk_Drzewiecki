@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <title>Countries</title>
+</head>
+<body>
+<h1>List of Countries</h1><br>
+<table class="table">
+
+        <tr>
+        <td>Country index</td>
+        <td>Country name</td>
+        <td>Country description</td>
+        </tr>
+        
+            <tr th:each="prod : ${countries}">
+                <td th:text="${prod.countryId}">Index</td>
+                <td th:text="${prod.name}">Name</td>
+                <td th:text="${prod.description}">Description</td>
+            </tr>
+        </table>
+        <form method="GET" action="/panel" enctype="multipart/form-data">
+                <input type="submit" value="<--Back">
+            </form>
+</body>
+</html>

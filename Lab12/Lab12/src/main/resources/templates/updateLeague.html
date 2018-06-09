@@ -1,0 +1,7 @@
+<form method="POST" action="/updateLeague2">
+	Name:<input type="text" name="name" required><br> 
+	Description:<input type="text" name="description" required><br>
+	Country ID:<input type="number" name="countryId" required><br>
+	<input type="hidden" name="index" th:value="${index}"> 
+	 <input	type="submit" value="Update">
+</form>

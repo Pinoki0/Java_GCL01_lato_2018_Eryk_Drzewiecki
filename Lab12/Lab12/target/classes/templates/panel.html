@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<head>
+<meta charset="UTF-8">
+<title>Main Panel</title>
+</head>
+<body>
+	<h1>Main Panel</h1>
+	<div>
+		<p align="center">Clubs</p>
+		<table class="table">
+			<tr>
+				<td>ShowALL</td>
+				<td>Add</td>
+				<td>Delete</td>
+				<td>Update</td>
+			</tr>
+			<tr>
+				<td>
+					<form action="/allClubs" method="POST">
+						<button type="submit">Submit</button>
+					</form>
+				</td>
+				<td>
+					<form action="/addClub" method="POST">
+						<button type="submit">Submit</button>
+					</form>
+				</td>
+				<td>
+					<form action="/removeClub" method="POST">
+					<input type="number" name="index">
+					<button type="submit">Submit</button>
+					</form>
+				</td>
+				<td>
+					<form action="/updateClub" method="POST">
+					<input type="number" name="index">
+						<button type="submit">Submit</button>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<p align="center">Leagues</p>
+		<table class="table">
+			<tr>
+				<td>ShowALL</td>
+				<td>Add</td>
+				<td>Delete</td>
+				<td>Update</td>
+			</tr>
+			<tr>
+				<td>
+					<form action="/allLeagues" method="POST">
+						<button type="submit">Submit</button>
+					</form>
+				</td>
+				<td>
+					<form action="/addLeague" method="POST">
+						<button type="submit">Submit</button>
+					</form>
+				</td>
+				<td>
+					<form action="/removeLeague" method="POST">
+					<input type="number" name="index">
+					<button type="submit">Submit</button>
+					</form>
+				</td>
+				<td>
+					<form action="/updateLeague" method="POST">
+					<input type="number" name="index">
+						<button type="submit">Submit</button>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<p align="center">Countries</p>
+		<table class="table">
+			<tr>
+				<td>ShowALL</td>
+				<td>Add</td>
+				<td>Delete</td>
+				<td>Update</td>
+			</tr>
+			<tr>
+				<td>
+					<form action="/allCountries" method="POST">
+						<button type="submit">Submit</button>
+					</form>
+				</td>
+				<td>
+					<form action="/addCountry" method="POST">
+						<button type="submit">Submit</button>
+					</form>
+				</td>
+				<td>
+					<form action="/removeCountry" method="POST">
+					<input type="number" name="index">
+					<button type="submit">Submit</button>
+					</form>
+				</td>
+				<td>
+					<form action="/updateCountry" method="POST">
+					<input type="number" name="index">
+						<button type="submit">Submit</button>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
